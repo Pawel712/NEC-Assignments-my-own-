@@ -3,8 +3,8 @@ from sklearn import svm
 from sklearn import metrics
 import pandas as pd
 
-ringTrainData = pd.read_csv('A2-ring/A2-ring-separable.txt', sep='\t', header=None)
-ringTestData = pd.read_csv('A2-ring/A2-ring-test.txt', sep='\t', header=None)
+ringTrainData = pd.read_csv('../A2-ring/A2-ring-separable.txt', sep='\t', header=None)
+ringTestData = pd.read_csv('../A2-ring/A2-ring-test.txt', sep='\t', header=None)
 
 X_train = ringTrainData.iloc[:,:-1].values
 y_train = ringTrainData.iloc[:, -1].values

@@ -1,5 +1,5 @@
-from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
+
 
 with open('../A2-bank/bank-additional.csv', 'r') as file:
     df = pd.read_csv('../A2-bank/bank-additional.csv', sep=';')
@@ -14,9 +14,13 @@ with open('../A2-bank/bank-additional.csv', 'r') as file:
 #print(df[df['duration'] == 0]['duration'])
 
 #print the values from smallest to biggest in column duration
-print("Sorted values: ",df['poutcome'].sort_values())
+#print("Sorted values: ",df['poutcome'].sort_values())
 
 #print the column unique values and convert them to a list
-unique_values = df['poutcome'].unique().tolist()
-print(unique_values)
+#unique_values = df['poutcome'].unique().tolist()
+#print(unique_values)
+
+
+print(len(df.columns))
+
 

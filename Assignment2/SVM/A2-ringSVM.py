@@ -1,7 +1,7 @@
-from sklearn import datasets
 from sklearn import svm
 from sklearn import metrics
 import pandas as pd
+from sklearn.model_selection import cross_val_score
 
 ringTrainData = pd.read_csv('../A2-ring/A2-ring-separable.txt', sep='\t', header=None)
 ringTestData = pd.read_csv('../A2-ring/A2-ring-test.txt', sep='\t', header=None)

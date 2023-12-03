@@ -27,22 +27,4 @@ df = ConvertToBinaryValues(df)
 df.to_csv("../ModifiedDatasets/HeartAttackModified.csv", sep=";", index=False)
 
 
-# columns of heartAttack dataset
-#print(df.columns)
-#columns = ['age', 'gender', 'impluse', 'pressurehigh', 'pressurelow', 'glucose',
-#       'kcm', 'troponin', 'class']
-##check outliers:
-#for i in columns:
-#    print(i)
-#    #print("Unique values of the column: ", i , df[i].unique())
-#    print("Max and min value: of column: ", i, df[i].max(), df[i].min())
-
-#unique_values = df['gender'].unique()
-
-#maxValue = df['gender'].max()
-#minValue = df['gender'].min()
-#print("maxValue: ", maxValue)
-#print("minValue: ", minValue)
-
-
 
